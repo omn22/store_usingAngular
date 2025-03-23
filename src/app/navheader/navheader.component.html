@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+  <div class="container">
+      <span class="navbar-brand fw-bold">🛍️InstaShop</span>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a class="nav-link fw-semibold text-light px-3 rounded" routerLink="/" routerLinkActive="active-link"
+                      [routerLinkActiveOptions]="{'exact':true}">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link fw-semibold text-light px-3 rounded" routerLink="/add-product" routerLinkActive="active-link">AddProduct</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link fw-semibold text-light px-3 rounded" routerLink="/setting" routerLinkActive="active-link">Setting</a>
+              </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2">
+              <a routerLink="/register" routerLinkActive="active-link" class="btn btn-outline-light fw-semibold">Register</a>
+              <a routerLink="/login" routerLinkActive="active-link" class="btn btn-outline-light fw-semibold">Login</a>
+              <a routerLink="/product-counter" routerLinkActive="active-link" class="cart-icon ms-2">
+                  🛒 <span class="fw-bold">{{ countervalue }}</span>
+              </a>
+          </div>
+      </div>
+  </div>
+</nav>
